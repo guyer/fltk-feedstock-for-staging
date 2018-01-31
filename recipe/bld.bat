@@ -1,20 +1,20 @@
 mkdir build
 cd build
 
-cmake -G "NMake Makefiles" ^
+cmake -G "Unix Makefiles" ^
       -DCMAKE_INSTALL_PREFIX="%PREFIX%" ^
       -DCMAKE_BUILD_TYPE=Release ^
       %SRC_DIR%
 if errorlevel 1 exit 1
 
 :: Build.
-nmake
+make
 if errorlevel 1 exit 1
 
 :: Test.
-ctest
+make test
 if errorlevel 1 exit 1
 
 :: Install.
-nmake install
+make install
 if errorlevel 1 exit 1
