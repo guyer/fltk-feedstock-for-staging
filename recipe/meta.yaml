@@ -26,6 +26,7 @@ requirements:
   build:
     - toolchain
     - cmake
+    - vc 9  # [win]
 
 test:
   # Some package might need a `test/commands` key to check CLI.
