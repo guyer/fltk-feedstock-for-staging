@@ -1,4 +1,4 @@
-sh configure --prefix=%PREFIX%
+cmake -DCMAKE_INSTALL_PREFIX="%PREFIX%" -DCMAKE_BUILD_TYPE=Release ..
 if errorlevel 1 exit 1
 
 :: Build.
