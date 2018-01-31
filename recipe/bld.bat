@@ -1,7 +1,8 @@
 mkdir build
 cd build
 
-cmake -DCMAKE_INSTALL_PREFIX="%PREFIX%" ^
+cmake -G "NMake Makefiles" ^
+      -DCMAKE_INSTALL_PREFIX="%PREFIX%" ^
       -DCMAKE_BUILD_TYPE=Release ^
       %SRC_DIR%
 if errorlevel 1 exit 1
