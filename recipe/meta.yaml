@@ -26,7 +26,6 @@ requirements:
   build:
     - toolchain
     - cmake
-    - mingw  # [win]
 
 test:
   # Some package might need a `test/commands` key to check CLI.

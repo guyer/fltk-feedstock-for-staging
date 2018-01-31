@@ -1,4 +1,14 @@
 sh configure --prefix=%PREFIX%
-make -j%CPU_COUNT%
-make test
-make install
+if errorlevel 1 exit 1
+
+:: Build.
+nmake
+if errorlevel 1 exit 1
+
+:: Test.
+ctest
+if errorlevel 1 exit 1
+
+:: Install.
+nmake install
+if errorlevel 1 exit 1
