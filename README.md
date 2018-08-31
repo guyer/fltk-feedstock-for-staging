@@ -23,14 +23,16 @@ applications in minutes.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fltk-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fltk-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fltk-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fltk-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fltk-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fltk-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fltk-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fltk-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/fltk-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fltk-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/fltk-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/fltk-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/guyer/fltk/badges/version.svg)](https://anaconda.org/guyer/fltk)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/guyer/fltk/badges/downloads.svg)](https://anaconda.org/guyer/fltk)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fltk-green.svg)](https://anaconda.org/guyer/fltk) | [![Conda Downloads](https://img.shields.io/conda/dn/guyer/fltk.svg)](https://anaconda.org/guyer/fltk) | [![Conda Version](https://img.shields.io/conda/vn/guyer/fltk.svg)](https://anaconda.org/guyer/fltk) | [![Conda Platforms](https://img.shields.io/conda/pn/guyer/fltk.svg)](https://anaconda.org/guyer/fltk) |
 
 Installing fltk
 ===============
@@ -73,7 +75,7 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string).
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string)
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
